@@ -121,7 +121,7 @@ async def error(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def main() -> None:
     # tg token
-    application = Application.builder().token("7351248226:AAEDXBIuY5iXyTPZBj2dzz_hlamQIXX0Okg").build()
+    application = Application.builder().token("ADD YOUR TG BOT TOKEN HERE!!").build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     application.add_error_handler(error)
